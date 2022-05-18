@@ -12,11 +12,11 @@ console.log(ticketPrice);
 
 // PONIAMO LE CONDIZIONI PER I MINORENNI CHE HANNO DIRITTO AD UNO SCONTO DEL 20% E PER GLI OVER 65 CHE HANNO UNO SCONTO DEL 40%
 if (age < 18) {
-    currentPrice1 = ticketPrice - ((ticketPrice * 20) / 100);
+    currentPrice = ticketPrice - ((ticketPrice * 20) / 100);
+} else if (age > 65) {
+    currentPrice = ticketPrice - ((ticketPrice * 40) / 100);
+} else {
+    currentPrice = ticketPrice;
 }
-else (age > 65); {
-    currentPrice2 = ticketPrice - ((ticketPrice * 40) / 100);
-};
 
-
-console.log(currentPrice1, currentPrice2);
+console.log(currentPrice);
