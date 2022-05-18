@@ -20,3 +20,12 @@ if (age < 18) {
 }
 
 console.log(currentPrice);
+
+// PRENDO L'ELEMENTO ID DALL'HTML E REALIZZO L'OUPUT
+const lista = document.getElementById('infotravel');
+console.log(lista);
+
+
+lista.innerHTML = `<li>Età:${age} </li>
+                    <li>Km:${numKm}</li>
+                    <li>Prezzo:${currentPrice}£</li>`;
